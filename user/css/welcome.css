@@ -1,0 +1,71 @@
+body {
+    background-image: url('img/welcomepage.jpg');
+    background-size: 1400px 800px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: min-content;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+/** positioning**/
+#left-div{
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar {
+    background-color: #ffd500;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+}
+
+/* Set white text color */
+.nav-link {
+    color: #070707;
+}
+.bar {
+    position: absolute;
+    top: 0%;
+    left: 250px;
+    width: 100%;
+    height: 75px;
+    /* adjust to the desired height of the bar */
+    background-color: #000000;
+    /* adjust to the desired color of the bar */
+    opacity: 0.75;
+    /* adjust to the desired opacity of the bar */
+}
+
+/* Set position of Quit button */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.background-label {
+    position: absolute;
+    /* top: -1%; */
+    /* left: 260px; */
+    margin-left: 260px;
+    /* transform: translate(-50%, 50%); */
+    color: #ffffff;
+    font-size: 2rem;
+    /* adjust to the desired font size */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+		background-size: 100%;
+	}
+}

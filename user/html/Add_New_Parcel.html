@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Sidebar Navigation Bar with Yellow Side Background</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Custom Styles -->
+	<style>
+		/* Set yellow background color */
+		.sidebar {
+			background-color: #ffd500;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 250px;
+			padding: 20px;
+		}
+		/* Set white text color */
+		.nav-link {
+			color: #070707;
+		}
+		/* Set position of Quit button */
+		.quit-btn {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+		#form-container {
+			position: absolute;
+			top: 100px;
+			left: 58%;
+			transform: translateX(-50%);
+			width: 50%;
+			height: 400px;
+			
+			}
+
+			@media (min-width: 992px) {
+			#form-container {
+				top: 100px;
+				height: 500px;
+			}
+			}
+			body {
+			background-image: url('img/allpages.jpg');
+			background-size: 1400px 800px;
+			background-position: center top;
+			background-repeat: no-repeat;
+			}
+			.background-label {
+			position: absolute;
+			top: -1%;
+			left: 26%;
+			transform: translate(-50%, 50%);
+			color: rgb(122, 5, 5);
+			font-size: 2rem; /* adjust to the desired font size */
+			}
+			.bar {
+			position: absolute;
+			top:0%;
+			left: 0;
+			width: 100%;
+			height: 75px; /* adjust to the desired height of the bar */
+			background-color: #c33939; /* adjust to the desired color of the bar */
+			opacity: 0.5; /* adjust to the desired opacity of the bar */
+			}
+			
+
+	</style>
+</head>
+<body>
+	<div class="background-container">
+		<div class="bar"></div>
+		<h1 class="background-label">Add New Parcel</h1>
+	  </div>
+	<!-- Quit Button -->
+	<button class="btn btn-danger quit-btn">Quit</button>
+	<!-- Sidebar Navigation -->
+	<nav class="sidebar">
+		<!-- Brand Logo -->
+		<a class="navbar-brand" href="#"><img src="img/cheetahlogo.png"  alt="Bootstrap" width="120" height="80"></a>
+		<!-- Navigation Links -->
+		<ul class="navbar-nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link" href="welcome.html">Welcome</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="Add_New_parcel.html"><b>Add New Parcel</b><span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Search_Parcel.html">Search Parcel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="allparcel.html">All Parcel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pickup_request.html">Pickup Request</a>
+			</li>
+            <li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+	<div id="form-container">
+		<form>
+		  <div class="form-group">
+			<label for="exampleFormControlSelect1"><b>Parcel Type</b></label>
+			<select class="form-control" id="exampleFormControlSelect1">
+			  <option>Less than 1kg</option>
+			  <option>1kg-5kg</option>
+			  <option>5kg-15kg</option>
+			  <option>More than 15kg</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1"><b>Parcel Description</b></label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		  <div class="form-group">
+            <label for="name"><b>Receiver Name</b></label>
+            <input type="text" class="form-control" id="name">
+          </div>
+		  <div class="form-group">
+			<label for="phone"><b>Phone Number</b></label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="+941234567890" required>
+          </div>
+		  <div class="form-group">
+			<label for="inputAddress"><b>Address</b></label>
+			<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+		  </div>
+		  <div class="form-row">
+			<div class="form-group col-md-6">
+			  <label for="inputCity"><b>City</b></label>
+			  <input type="text" class="form-control" id="inputCity">
+			</div>
+			<div class="form-group col-md-4">
+			  <label for="inputState"><b>Province</b></label>
+			  <select id="inputState" class="form-control">
+				<option selected>Choose</option>
+				<option>Colombo</option>
+				<option>Kaluthara</option>
+				<option>Gampaha</option>
+			  </select>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="reset" class="btn btn-pr">Reset</button>
+			  </div>
+		</form>
+	  </div>
+	  
+	
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Sidebar Navigation Bar with Yellow Side Background</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Custom Styles -->
+	<style>
+		/* Set yellow background color */
+		.sidebar {
+			background-color: #ffd500;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 250px;
+			padding: 20px;
+		}
+		/* Set white text color */
+		.nav-link {
+			color: #070707;
+		}
+		/* Set position of Quit button */
+		.quit-btn {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Quit Button -->
+	<button class="btn btn-danger quit-btn">Quit</button>
+	<!-- Sidebar Navigation -->
+	<nav class="sidebar">
+		<!-- Brand Logo -->
+		<a class="navbar-brand" href="#"><img src="img/cheetahlogo.png"  alt="Bootstrap" width="120" height="80"></a>
+		<!-- Navigation Links -->
+		<ul class="navbar-nav flex-column">
+			<li class="nav-item">
+				<a class="nav-link" href="welcome.html">Welcome</a>
+							
+				<li class="nav-item">
+					<a class="nav-link" href="Add_New_parcel.html">Add New Parcel</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Search_Parcel.html">Search Parcel</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="allparcel.html">All Parcel</a>
+				</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pickup_request.html">Pickup Request</a>
+			</li>
+            <li class="nav-item active">
+				<a class="nav-link" href="finance.html"><b>Finance</b><span class="sr-only">(current)</span></a>
+			</li>
+            <li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+		  <div class="col-md-6">
+			<table class="table">
+			  <thead>
+				<tr>
+				  <th>Parcel Info</th>
+				  <th>Deliver Date</th>
+				  <th>COD Amount</th>
+				  <th>Delivery Fee</th>
+				  <th>COD After Delivery Fee</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Parcel 1</td>
+				  <td>April 28, 2023</td>
+				  <td>$50.00</td>
+				  <td>$5.00</td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Parcel 2</td>
+				  <td>April 29, 2023</td>
+				  <td>$75.00</td>
+				  <td>$7.50</td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Parcel 3</td>
+				  <td>April 30, 2023</td>
+				  <td>$100.00</td>
+				  <td>$10.00</td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Parcel 4</td>
+				  <td>May 1, 2023</td>
+				  <td>$125.00</td>
+				  <td>$12.50</td>
+				  <td></td>
+				</tr>
+				<tr>
+				  <td>Parcel 5</td>
+				  <td>May 2, 2023</td>
+				  <td>$150.00</td>
+				  <td>$15.00</td>
+				  <td></td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		</div>
+	  </div>
+	  
+	  
+	  
+
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

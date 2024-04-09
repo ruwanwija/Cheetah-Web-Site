@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Sidebar Navigation Bar with Yellow Side Background</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Custom Styles -->
+	<style>
+		/* Set yellow background color */
+		.sidebar {
+			background-color: #ffd500;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 250px;
+			padding: 20px;
+		}
+		/* Set white text color */
+		.nav-link {
+			color: #070707;
+		}
+		/* Set position of Quit button */
+		.quit-btn {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+		body {
+		background-image: url('img/welcomepage.jpg');
+		background-size: 1400px 800px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		}
+
+		@media screen and (max-width: 768px) {
+		body {
+			background-size: 100%;
+		}
+		}
+		.background-label {
+			position: absolute;
+			top: -1%;
+			left: 23%;
+			transform: translate(-50%, 50%);
+			color: rgb(122, 5, 5);
+			font-size: 2rem; /* adjust to the desired font size */
+			}
+			.bar {
+			position: absolute;
+			top:0%;
+			left: 0;
+			width: 100%;
+			height: 75px; /* adjust to the desired height of the bar */
+			background-color: #c33939; /* adjust to the desired color of the bar */
+			opacity: 0.5; /* adjust to the desired opacity of the bar */
+			}
+			
+
+
+	</style>
+</head>
+<body>
+	<div class="background-container">
+		<div class="bar"></div>
+		<h1 class="background-label">Username</h1>
+	  </div>
+	<!-- Quit Button -->
+	<button class="btn btn-danger quit-btn">Quit</button>
+	<!-- Sidebar Navigation -->
+	<div class="col-md-2">
+	<nav class="sidebar">
+		<!-- Brand Logo -->
+		<a class="navbar-brand" href="#"><img src="img/cheetahlogo.png"  alt="Bootstrap" width="120" height="80"></a>
+		<!-- Navigation Links -->
+		<ul class="navbar-nav flex-column active">
+			<li class="nav-item active">
+				<a class="nav-link" href="welcome.html"><b>Welcome</b><span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Add_New_parcel.html">Add New Parcel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Search_Parcel.html">Search Parcel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="allparcel.html">All Parcel</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pickup_request.html">Pickup Request</a>
+			</li>
+            <li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+  
+	
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Sliderbar */
+.sidebar {
+    background-color: #ffd500;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+}
+.nav-link {
+    color: #070707;
+}
+/* logout button */
+.quit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+/* body */
+body {
+background-image: url('img/allpages.jpg');
+background-size: 1400px 800px;
+background-position: center top;
+background-repeat: no-repeat;
+}
+/* form - container*/
+#form-container {
+    position: absolute;
+    top: 100px;
+    left: 58%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 400px;
+}
+/*background label*/
+.background-label {
+position: absolute;    
+margin-left: 260px;
+color: #ffffff;
+font-size: 2rem;
+}
+/*bar*/
+.bar{
+position: absolute;
+top: 0%;
+left: 250px;
+width: 100%;
+height: 75px;
+background-color: #000000;
+opacity: 0.75;
+}
+/*container*/
+.container {
+position: fixed;
+top: 80px;
+left: 250px;
+}

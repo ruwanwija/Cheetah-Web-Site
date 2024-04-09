@@ -1,0 +1,54 @@
+	/* sidebar */
+    .sidebar {
+        background-color: #ffd500;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        padding: 20px;
+    }
+    .nav-link {
+        color: #070707;
+    }
+    
+    /*image*/
+    body {
+        background-image: url('img/admin.jpg');
+        background-size: 1400px 800px;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    /*label*/
+    .background-label {
+        position: absolute;
+         top: 2%; 
+        left: 260px; 
+        color: #ffffff;
+        font-size: 2rem;
+    }
+    .bar {
+        position: absolute;
+        top: 0%;
+        left: 250px;
+        width: 100%;
+        height: 75px;
+        background-color: #000000;
+        opacity: 0.75;
+    }
+    /*body*/
+        body {
+        margin-top: 130px;
+        margin-right: 400px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+        padding: 0 20px;
+        }
+        @media (max-width: 600px) {
+    body {
+        justify-content: center;
+        padding: 0 10px;
+    }
+}
